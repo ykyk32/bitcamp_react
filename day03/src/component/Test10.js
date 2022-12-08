@@ -54,7 +54,7 @@ const Test10 = () => {
             <hr/>
             <ul>
                 {
-                    data.map(item => <li>
+                    data.map(item => <li key ={item.seq}>
                         { item.seq }/{ item.name }/ { item.age }
                     </li>)
                 }

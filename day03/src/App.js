@@ -9,6 +9,7 @@ import Test07Main from './component/Test07Main';
 import Test08Gallery from './component/Test08Gallery';
 import Test09 from './component/Test09';
 import Test10 from './component/Test10';
+import Test11 from './component/Test11';
 
 const App = () => {
   return (
@@ -22,7 +23,8 @@ const App = () => {
       {/* <Test07Main /> */}
       {/* <Test08Gallery /> */}
       {/* <Test09 /> */}
-      <Test10 />
+      {/* <Test10 /> */}
+      <Test11 />
     </div>
   );
 };
