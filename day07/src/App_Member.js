@@ -6,15 +6,23 @@ const App_Member = () => {
     return (
         <BrowserRouter>
             <>
-                <nav>
-                    <ul>
-                        <li><Link to='/' >main</Link></li>                        
-                    </ul>
-                </nav>
-            </>
-            <Routes>
-                <Route path='/' element={<Main />}/>
-            </Routes>
+                <Main />
+
+                <Routes>
+                    <Route
+                        path="/writeForm"
+                        element={<WriteForm></WriteForm>}
+                    ></Route>
+                    <Route
+                        path="/loginForm"
+                        element={<LoginForm></LoginForm>}
+                    ></Route>
+                    <Route
+                        path="/writeList"
+                        element={<WriteList></WriteList>}
+                    ></Route>
+                </Routes>
+            </>          
         </BrowserRouter>
     );
 };
